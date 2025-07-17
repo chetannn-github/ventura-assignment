@@ -16,8 +16,9 @@ function BreadCrumb({path}) {
     if(segments.length == 1) return;
     return (
     <div>
-        {console.log(segments)}
-        {segments.map((val,idx)=><Link to={val.path}>{"/"+val.label}</Link>)}
+        {/* {console.log(segments)} */}
+        {segments.map((val,idx)=>( idx !== segments.length-1 ?
+            <Link to={val.path}>{"/" + val.label}</Link> : "/" + val.label))}
         
     </div>
   )
