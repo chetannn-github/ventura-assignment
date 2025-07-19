@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'sora';
+    src: url('/src/assets/fonts/soraa.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@theme {
+  --color-primary: #FF844B;
+  --color-secondary: #191442;
+  --color-bermuda: #78dcca;
+}
+
+*{
+  user-select: none;
+  font-family: "sora";
+}
+
+
+a{
+    text-decoration: solid;
+}
