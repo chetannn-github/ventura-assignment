@@ -9,7 +9,7 @@ import UpcomingIPO from '../../components//IPO/UpcomingIPO';
 function IPOList() {
   let currPath = useLocation();
   return (
-    <div>
+    <div >
       <Hero/>
       <OpenIPOs/>
       <UpcomingIPO/>

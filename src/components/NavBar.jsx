@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 function NavBar() {
   return (
-    <div className='flex justify-center gap-20 px-[11.5px] py-[18px] border-b-[0.5px] border-[#00000018]'>
+    <div className='flex justify-center gap-20  w-full py-[18px] border-b-[0.5px] border-[#00000018]'>
 
       <div className='flex  gap-8 items-center cursor-pointer'>
         <Link to={'/'}><img src={LOGO_URL} className='h-[20px] '/></Link>
