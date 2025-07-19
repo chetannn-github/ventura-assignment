@@ -5,3 +5,5 @@ export const IPO_HERO = {
     subImg : "https://www.venturasecurities.com/wp-content/uploads/2023/03/ipo-atf.png",
     star : "https://www.venturasecurities.com/wp-content/uploads/2023/03/Group-772543380.png"
 }
+
+export const COMPANY_LOGO = "https://ipo.ventura1.com/aceipo/admin/logo/3294_Logo.png"
