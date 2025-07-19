@@ -6,6 +6,7 @@ import IPOList from "./Pages/IPO/IPOList";
 import Home from "./Pages/Home/Home";
 import IPODetail from "./Pages/IPO/IPODetail";
 import IPO from "./Pages/IPO/IPO";
+import "./index.css"
 
 const root = document.getElementById("root");
 
