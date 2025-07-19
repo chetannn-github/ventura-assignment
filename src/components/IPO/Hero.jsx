@@ -1,5 +1,5 @@
 import React from 'react'
-import { IPO_HERO } from '../utils/constant'
+import { IPO_HERO } from '../../utils/constant'
 import { ChevronRight } from 'lucide-react'
 
 function Hero() {

@@ -1,10 +1,12 @@
 import React from 'react'
-import { COMPANY_LOGO } from '../utils/constant'
+import { COMPANY_LOGO } from '../../utils/constant'
+import { Link } from 'react-router'
 
 function IPOCard() {
-  return (
+  return (<Link to={"/ipo/chetan"}>
     <div className=' w-[350px] h-[300px] flex flex-col justify-between  border-1 border-[#00000020] rounded-xl overflow-hidden pb-3 shadow-2xl'>
-
+        
+        
         <div className='p-4'>
             <img src={COMPANY_LOGO} className='h-10 '/>
             <h2 className='font-black text-xl truncate'>Swastika Castal Limited - SME</h2>
@@ -34,7 +36,7 @@ function IPOCard() {
             </div>
         </div>
 
-    </div>
+    </div></Link>
   )
 }
 
