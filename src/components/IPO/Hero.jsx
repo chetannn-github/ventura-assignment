@@ -1,33 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IPO_HERO } from '../../utils/constant'
 import { ChevronRight } from 'lucide-react'
 
 function Hero() {
+    const [mobileNumber, setMobileNumber] = useState("");
+    const handleChangeMobileNum = (e) => {
+        const inpVal = e.target.value;
+        if(isNaN(inpVal) || inpVal.length > 10 ) return;
+        setMobileNumber(inpVal)
+    }
+
+
   return (
-    <div className='flex w-full h-[70vh] bg-amber-500'>
-        <div className='bg-bermuda w-2/3'>
-            <div>
-                <h1>IPO - <span className='text-primary'>Intial Public Offerings</span></h1>
-                <p>Identify the right IPOs to invest in with our research notes</p>
-                
+    <div className='relative flex w-full h-[70vh] '>
+
+
+        <div className=' w-2/3 flex flex-col justify-between py-15'>
+            <div className='flex flex-col gap-5'>
+                <h1 className='text-5xl font-black'>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
+                <p className='text-xl'>Identify the right IPOs to invest in with our research notes</p>
             </div>
 
-            <div className=''>
-                <h3>Open an account</h3>
-                <div className='flex bg-[#f8f8f8]'>
-                    <div>+91</div>
-                    <input type="text" />
-                    <div className='bg-primary'><ChevronRight color={"white"} /></div>
+
+
+            <div className='relative w-full'>
+                <h3 className='text-sm font-black'>Open an account</h3>
+                <div className='flex bg-[#f8f8f8] h-19 items-center gap-4 w-3/5 p-2 rounded-xl '>
+                    <div className=' '>+91</div>
+                    <input type="text" className='placeholder:text-sm' placeholder='Enter your mobile number' value={mobileNumber} onChange={handleChangeMobileNum}/>
+                    <div className='bg-primary h-10/12 w-1/4 flex items-center justify-center rounded-xl p-3'><ChevronRight color={"white"} /></div>
 
                 </div>
             </div>
         </div>
 
 
-        <div className='bg-black w-1/3 flex justify-center items-center'>
+        <div className=' w-1/3 flex justify-center items-center'>
 
-            <div className=' bg-amber-600 rounded-full overflow-hidden'>
-                <img className='object-contain ' src={IPO_HERO.mainImg} alt="" />
+            <div className='relative  rounded-full h-[400px] w-[400px] flex items-center justify-center border-1 border-[#00000020]'>
+
+                <div className='rounded-full overflow-hidden w-9/12 h-9/12'>
+                    <img className='object-contain ' src={IPO_HERO.mainImg} alt="" />
+                </div>
             </div>
             
         </div>
