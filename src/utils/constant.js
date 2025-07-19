@@ -1,5 +1,5 @@
 export const LOGO_URL = "https://d14zm0hu08yytt.cloudfront.net/wp-content/uploads/2025/01/ventura-logo.svg"
-
+export const WHITE_LOGO_URL = "http://d14zm0hu08yytt.cloudfront.net/wp-content/uploads/2023/03/whitelogo.png"
 export const IPO_HERO = {
     mainImg : "https://d14zm0hu08yytt.cloudfront.net/wp-content/uploads/2023/04/IPO-Cropped.png",
     subImg : "https://www.venturasecurities.com/wp-content/uploads/2023/03/ipo-atf.png",
@@ -133,8 +133,32 @@ export const IPO_DATA = {
       gain: "+9.8%",
       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3154_Logo.png"
     }
+  ],
+
+  openIPO: [
+    {
+      name: "CFF Fluid Control Limited",
+      date: "9th Jul - 11th Jul 2025",
+      issueSize: "₹ 88 Cr",
+      priceBand: "₹ 585",
+      lotValue: "₹ 234,000",
+      lotSize: "400 Shares / 1 Lot",
+      subscribed: "Subscribed 1.20x times in retail category",
+      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3066_Logo.png"
+    },
+    {
+      name: "Mega Buildtech Limited",
+      date: "15th Jul - 18th Jul 2025",
+      issueSize: "₹ 950 Cr",
+      priceBand: "₹ 220 - 230",
+      lotValue: "₹ 14,900",
+      lotSize: "65 Shares / 1 Lot",
+      subscribed: "Subscribed 2.75x times in retail category",
+      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png"
+    }
   ]
 };
+
 
 
 

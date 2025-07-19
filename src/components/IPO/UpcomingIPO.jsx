@@ -13,7 +13,7 @@ function UpcomingIPO() {
                     {["Upcoming", "Closed", "Listed"].map((tab, idx) => (
                         <div 
                         onClick={() => setSelectedIPOType(tab)}
-                        key={idx}
+                        key={tab}
                         className={`h-[90%] border-2 border-transparent ${selectedIPOType == tab ? "border-b-primary font-black" : ""} flex items-center  justify-center w-1/3 
                         hover:border-b-primary hover:border-b-2 hover:font-black text-sm`}>
                         {tab}

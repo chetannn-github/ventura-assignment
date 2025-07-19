@@ -17,13 +17,13 @@ function Hero() {
 
         <div className=' w-2/3 flex flex-col justify-between py-15'>
             <div className='flex flex-col gap-5'>
-                <h1 className='text-5xl font-black'>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
+                <h1 className='text-5xl font-black '>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
                 <p className='text-xl'>Identify the right IPOs to invest in with our research notes</p>
             </div>
 
 
 
-            <div className='relative w-full'>
+            <div className='relative w-full flex flex-col gap-2'>
                 <h3 className='text-sm font-black'>Open an account</h3>
                 <div className='flex bg-[#f8f8f8] h-19 items-center gap-4 w-3/5 p-2 rounded-xl '>
                     <div className=' '>+91</div>

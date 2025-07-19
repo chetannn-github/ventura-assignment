@@ -6,9 +6,9 @@ import BreadCrumb from '../../components/BreadCrumb'
 function IPO() {
     let currPath = useLocation();
     return (
-    <div className='w-full h-[200vh] flex flex-col items-center'> 
+    <div className='relative w-[100] h-[fit] flex flex-col items-center'> 
         <NavBar/>
-        <div className='px-20'>
+        <div className='relative px-45 w-full'>
           <BreadCrumb path={currPath.pathname}/>
           <Outlet/>
         </div>

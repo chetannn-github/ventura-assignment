@@ -1,19 +1,17 @@
-import React from 'react'
-import { Outlet, useLocation, useParams } from 'react-router'
-import BreadCrumb from '../../components/BreadCrumb';
-import GoBack from '../../components/GoBack';
-import { ChevronLeft } from 'lucide-react';
+
+import {useLocation, useParams } from 'react-router'
+import CompanyInfo from '../../components/IPODetails/CompanyInfo';
+import { IPO_DATA } from '../../utils/constant';
 
 function IPODetail() {
-  const {companyID} = useParams();
-  let currPath = useLocation();
+  const companyInfo= IPO_DATA.Closed[0];
 
   return (
-    <div>
-      {/* <BreadCrumb path = {currPath.pathname}/> */}
-    
-      <div>{companyID} IPO Details</div>
-      <GoBack path={currPath.pathname}><ChevronLeft /></GoBack>
+    <div className=' relative flex w-[100%] h-[40vh]'>
+      <CompanyInfo companyInfo={companyInfo}/>
+      
+      
+      
       
     </div>
   )

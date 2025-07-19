@@ -1,12 +1,14 @@
 import React from 'react'
 import IPOCard from './IPOCard'
+import { IPO_DATA } from '../../utils/constant'
 
 function OpenIPOs() {
+  const openIPO = IPO_DATA.openIPO
   return (
     <div className='h-[65vh] flex flex-col  gap-10 '>
         <h1 className='text-4xl font-black'>Open <span className='text-primary'>IPOs</span></h1>
         <div className='flex gap-6 w-full'>
-          {[1,3,3].map(()=><IPOCard/>)}
+          {openIPO.map((val,idx)=><IPOCard key={val.name} companyData={val}/>)}
         </div>
     </div>
   )

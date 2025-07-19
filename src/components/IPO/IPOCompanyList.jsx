@@ -1,9 +1,10 @@
 import React from 'react'
 import { IPO_DATA, NO_IPO_IMAGE_URL } from '../../utils/constant'
+import { Link } from 'react-router';
 
 function IPOCompanyList({listingType}) {
     const companyData = IPO_DATA[listingType];
-
+    
 
     if(companyData.length == 0) {
         return (
@@ -13,6 +14,8 @@ function IPOCompanyList({listingType}) {
             </div>
         )
     }
+
+    
 
     // name: "Smartworks Coworking Spaces Limited",
     //   date: "10th Jul - 14th Jul 2025",
@@ -25,14 +28,14 @@ function IPOCompanyList({listingType}) {
         <div className='relative flex flex-col w-full py-5'>
             <div className='flex bg-[#f8f8f8]' >
                 {["Company","Issue size","Price range","Min. Amount"].map((val, idx)=>
-                    <div className='relative w-1/4 flex justify-center text-sm' >
+                    <div key= {val} className='relative w-1/4 flex justify-center text-sm' >
                         {val}
                     </div>
                 )}
             </div>
             {companyData.map((val, idx)=>
-            <>
-            <div className='flex justify-between py-3' >
+            <Link to={`/ipo/${val?.name.split(" ").join("-").toLowerCase()}`} key={val.name}>
+                <div className='flex justify-between py-3' >
 
                 <div className='flex gap-2 w-1/4  '>
                     <div >
@@ -55,13 +58,13 @@ function IPOCompanyList({listingType}) {
                     <p className='text-xs text-[#0000008f]'>{val?.lotSize}</p>
                 </div>
                
-            </div> 
+                </div> 
 
-            <div className='bg-[#ffeee5] w-full flex items-center justify-center h-10 font-bold rounded-xl'>
-                {listingType === "Closed" ? val?.subscribed : `Listed at ${val?.listedAt} with  ${val?.gain} gains.`}
-            </div>
+                <div className='bg-[#ffeee5] w-full flex items-center justify-center h-10 font-bold rounded-xl'>
+                    {listingType === "Closed" ? val?.subscribed : `Listed at ${val?.listedAt} with  ${val?.gain} gains.`}
+                </div>
 
-        </>
+            </Link>
         )}
 
         </div>

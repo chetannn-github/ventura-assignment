@@ -6,12 +6,15 @@ import Home from "./Pages/Home/Home";
 import IPODetail from "./Pages/IPO/IPODetail";
 import IPO from "./Pages/IPO/IPO";
 import "./index.css"
+import ScrollToTop from "./components/ScrollToTop";
 
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
+    <ScrollToTop/>
     <Routes>
+      
       <Route path="/" element={<Home/>}/>
 
       <Route path="/ipo" element = {<IPO/>}>
