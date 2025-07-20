@@ -233,7 +233,7 @@ export const IPO_DATA = {
       lotValue: "₹ 234,000",
       lotSize: "400 Shares / 1 Lot",
       subscribed: "Subscribed 1.20x times in retail category",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3066_Logo.png",
+      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3294_Logo.png",
       timeline: [
         { label: "Bidding Starts", date: "09/07/2025" },
         { label: "Bidding Ends", date: "11/07/2025" },

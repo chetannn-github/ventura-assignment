@@ -6,18 +6,18 @@ function Footer() {
   return (
     <div className='bg-secondary relative w-full flex flex-col gap-4 rounded-3xl text-white p-10 pb-5' >
 
-        <div className='flex flex-col  gap-4 md:flex-row lg:gap-20 border-b-1 border-b-[#ffffff11] pb-10'>
+        <div className='flex flex-col  gap-4 xl:gap-20 md:flex-row lg:gap-20 border-b-1 border-b-[#ffffff11] pb-10'>
 
-            <div className='flex flex-col gap-5 w-full md:w-1/3'>
-                <div>
-                    <img src={WHITE_LOGO_URL}></img>
+            <div className='flex flex-col gap-7 w-full md:w-1/3'>
+                <div className='w-[120px] xl:w-[250px] '>
+                    <img className='object-cover h-full w-full object-contains' src={WHITE_LOGO_URL}></img>
                 </div>
 
                 <div className='flex gap-2 items-center'>
                     <div><MapPin /></div>
                     <div className='flex flex-col gap-2.5'>
-                        <h1 className='text-md font-medium'>Corporate Address</h1>
-                        <p className='text-sm leading-5'>
+                        <h1 className='text-md 2xl:text-2xl xl:text-xl'>Corporate Address</h1>
+                        <p className='text-sm lg:text-sm xl:text-xl lg:leading-9  leading-6'>
                             Ventura Securities Limited,
                             I-Think Techno Campus, 
                             “B” Wing,
@@ -28,12 +28,12 @@ function Footer() {
                 </div>
 
 
-                <div className='flex gap-3'>
-                    <div className='bg-[#ffffff1f] p-3 rounded-xl hover:bg-primary'><TwitterIcon /></div>
+                <div className='flex gap-3 xl:gap-6'>
+                    <div className='bg-[#ffffff1f] p-3 xl:p-6 rounded-xl hover:bg-primary'><TwitterIcon /></div>
                     
-                    <div className='bg-[#ffffff1f] p-3 rounded-xl hover:bg-primary'><Linkedin /></div>
-                    <div className='bg-[#ffffff1f] p-3 rounded-xl hover:bg-primary'><Youtube /></div>
-                    <div className='bg-[#ffffff1f] p-3 rounded-xl hover:bg-primary'><Instagram /></div>
+                    <div className='bg-[#ffffff1f] p-3 xl:p-6 rounded-xl hover:bg-primary'><Linkedin /></div>
+                    <div className='bg-[#ffffff1f] p-3 xl:p-6 rounded-xl hover:bg-primary'><Youtube /></div>
+                    <div className='bg-[#ffffff1f] p-3 xl:p-6 rounded-xl hover:bg-primary'><Instagram /></div>
                 </div>
 
             </div>
@@ -41,50 +41,50 @@ function Footer() {
 
 
             <div className='flex flex-col gap-5'>
-                <h3 className='font-bold text-lg '>Company</h3>
+                <h3 className='font-bold text-lg lg:text-xl xl:text-2xl '>Company</h3>
 
                 <div className='flex flex-col gap-3'>
-                    <a className='text-sm hover:text-primary' href="about-us">About us</a>
-                    <a className='text-sm hover:text-primary' href="contact-us">Contact us</a>
-                    <a className='text-sm hover:text-primary' href="careers">Careers</a>
-                    <a className='text-sm hover:text-primary' href="refer-earn">Refer and earn</a>
-                    <a className='text-sm hover:text-primary' href="support">Support</a>
-                    <a className='text-sm hover:text-primary' href="login">Associates & employee login</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="about-us">About us</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="contact-us">Contact us</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="careers">Careers</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="refer-earn">Refer and earn</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="support">Support</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="login">Associates & employee login</a>
                 </div>
             </div>
 
 
             <div className='flex flex-col gap-5'>
-                <h3 className='font-bold text-lg '>Products</h3>
+                <h3 className='font-bold text-lg lg:text-xl xl:text-2xl '>Products</h3>
 
                 <div className='flex flex-col gap-3'>
-                    <a className='text-sm hover:text-primary' href="">Stocks</a>
-                    <a className='text-sm hover:text-primary' href="">Mutual Funds</a>
-                    <a className='text-sm hover:text-primary' href="">Futures & Options</a>
-                    <a className='text-sm hover:text-primary' href="">IPO</a>
-                    <a className='text-sm hover:text-primary' href="">Upcoming IPOs</a>
-                    <a className='text-sm hover:text-primary' href="">Closed IPOs</a>
-                    <a className='text-sm hover:text-primary' href="">Listed IPOs</a>
-                    <a className='text-sm hover:text-primary' href="">Fixed Deposit</a>
-                    <a className='text-sm hover:text-primary' href="">EaseAPI</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">Stocks</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">Mutual Funds</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">Futures & Options</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">IPO</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">Upcoming IPOs</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">Closed IPOs</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">Listed IPOs</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">Fixed Deposit</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary' href="">EaseAPI</a>
                 </div>
             </div>
 
             <div className='flex flex-col gap-5'>
 
-                <h3 className='font-bold text-lg '>Quick Links</h3>
+                <h3 className='font-bold text-lg lg:text-xl xl:text-2xl '>Quick Links</h3>
 
                 <div className='flex flex-col gap-3'>
-                    <a className='text-sm hover:text-primary'>Blog</a>
-                    <a className='text-sm hover:text-primary'>News</a>
-                    <a className='text-sm hover:text-primary'>Share Market Guide</a>
-                    <a className='text-sm hover:text-primary'>Share Market Glossary</a>
-                    <a className='text-sm hover:text-primary'>Spotlight</a>
-                    <a className='text-sm hover:text-primary'>Bazaar Basics</a>
-                    <a className='text-sm hover:text-primary'>Platform</a>
-                    <a className='text-sm hover:text-primary'>T&C</a>
-                    <a className='text-sm hover:text-primary'>Privacy Policy</a>
-                    <a className='text-sm hover:text-primary'>Downloads</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Blog</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>News</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Share Market Guide</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Share Market Glossary</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Spotlight</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Bazaar Basics</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Platform</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>T&C</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Privacy Policy</a>
+                    <a className='text-sm lg:text-sm xl:text-xl hover:text-primary'>Downloads</a>
                 </div>
 
             </div>
@@ -99,9 +99,9 @@ function Footer() {
 
         <div className='flex flex-col gap-4'>
             <div className='flex w-full row gap-3'>
-                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px] '>Tools & Calculators</h1></div>
+                <div className='min-w-[150px] lg:min-w-[300px] flex'><h1 className=' text-sm lg:text-sm xl:text-xl  min-w-[100px] '>Tools & Calculators</h1></div>
                 
-                <ul className="list-disc list-inside flex flex-wrap gap-1  text-[#B0ADBE] text-sm">
+                <ul className="list-disc list-inside flex flex-wrap gap-1  text-[#B0ADBE] text-sm lg:text-sm xl:text-xl">
                     <li><a className = "hover:text-primary"  href="">Retirement Calculator</a></li>
                     <li><a className = "hover:text-primary" href="">SWP Calculator</a></li>
                     <li><a className = "hover:text-primary" href="">Home Loan Calculator</a></li>
@@ -117,9 +117,9 @@ function Footer() {
                 
             </div>
 
-            <div className='flex w-full row gap-4'>
-                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Top Indices</h1></div>
-                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
+            <div className='flex w-full row gap-4'> 
+                <div className='min-w-[150px] lg:min-w-[300px] flex'><h1 className=' text-sm lg:text-sm xl:text-xl  min-w-[100px]'>Top Indices</h1></div>
+                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm lg:text-sm xl:text-xl">
                     <li><a className="hover:text-primary" href="">All Indices</a></li>
                     <li><a className="hover:text-primary" href="">Nifty 50</a></li>
                     <li><a className="hover:text-primary" href="">Sensex</a></li>
@@ -138,9 +138,9 @@ function Footer() {
 
            
             <div className='flex w-full row gap-4'>
-                <div  className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Share Market Guide</h1></div>
+                <div  className='min-w-[150px] lg:min-w-[300px] flex'><h1 className=' text-sm lg:text-sm xl:text-xl  min-w-[100px]'>Share Market Guide</h1></div>
 
-                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
+                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm lg:text-sm xl:text-xl">
                     <li><a className="hover:text-primary" href="">Online Trading</a></li>
                     <li><a className="hover:text-primary" href="">IPO</a></li>
                     <li><a className="hover:text-primary" href="">Demat Account</a></li>
@@ -154,9 +154,9 @@ function Footer() {
 
 
             <div className='flex w-full row gap-4'>
-                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Stock Sectors</h1></div>
+                <div className='min-w-[150px] lg:min-w-[300px] flex'><h1 className=' text-sm lg:text-sm xl:text-xl  min-w-[100px]'>Stock Sectors</h1></div>
 
-                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
+                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm lg:text-sm xl:text-xl">
                     <li><a className="hover:text-primary" href="">All Sectors</a></li>
                     <li><a className="hover:text-primary" href="">IT Stocks</a></li>
                     <li><a className="hover:text-primary" href="">Alcohol Sector Stocks</a></li>
@@ -174,9 +174,9 @@ function Footer() {
 
 
             <div className='flex w-full row gap-4'>
-                <div className='min-w-[150px] flex '><h1 className=' text-sm'>Daily Market Updates</h1></div>
+                <div className='min-w-[150px] lg:min-w-[300px] flex'><h1 className=' text-sm lg:text-sm xl:text-xl'>Daily Market Updates</h1></div>
 
-                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
+                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm lg:text-sm xl:text-xl">
                     <li><a className="hover:text-primary" href="">Daily Market Outlook</a></li>
                     <li><a className="hover:text-primary" href="">Nifty Pre Open Today – June 27</a></li>
                     <li><a className="hover:text-primary" href="">Post-Market Outlook – June 26, 2025</a></li>
@@ -186,9 +186,9 @@ function Footer() {
 
 
             <div className='flex w-full row gap-4'>
-                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Trending Blogs</h1></div>
+                <div className='min-w-[150px] lg:min-w-[300px] flex'><h1 className=' text-sm lg:text-sm xl:text-xl  min-w-[100px]'>Trending Blogs</h1></div>
 
-                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
+                <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm lg:text-sm xl:text-xl">
                     <li><a className="hover:text-primary" href="">Upcoming IPOs in June 2025</a></li>
                     <li><a className="hover:text-primary" href="">Upcoming Corporate Actions – 23 Jun – 27 Jun</a></li>
                     <li><a className="hover:text-primary" href="">Top Performing Defence Stocks in 2025</a></li>
@@ -205,7 +205,7 @@ function Footer() {
 
 
 
-        <div className='flex flex-col gap-5 text-sm leading-6'>
+        <div className='flex flex-col gap-5 text-sm lg:text-sm xl:text-xl leading-6'>
             <h1>Disclaimer</h1>
             <h1>Investments in the securities market are subject to market risks, read all the related documents carefully before investing. Brokerage will not exceed SEBI prescribed limit. Please read the SEBI prescribed Combined Risk Disclosure Document prior to investing.</h1>
             <h1>The securities are quoted as an example and not as a recommendation.</h1>
@@ -220,8 +220,8 @@ Issued in the interest of Investors</h1>
         </div>
 
 
-        <div className='flex justify-center items-center w-full text-xs'>© 2025 Ventura. All rights reserved.</div>
-<div className='flex justify-center items-center w-full text-xs'>Built with ❤️ in India.</div>
+        <div className='flex justify-center items-center w-full text-xs lg:text-sm xl:text-xl '>© 2025 Ventura. All rights reserved.</div>
+<div className='flex justify-center items-center w-full text-xs lg:text-sm xl:text-xl '>Built with ❤️ in India.</div>
     </div>
   )
 }

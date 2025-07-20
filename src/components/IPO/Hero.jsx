@@ -12,24 +12,24 @@ function Hero() {
 
 
   return (
-    <div className='relative flex w-full flex-col-reverse h-[100vh] md:flex-row md:justify-between md:h-[50vh]'>
+    <div className='relative flex w-full flex-col-reverse justify-end h-fit md:flex-row md:justify-between md:min-h-[40vh]  '>
 
 
         <div className='relative flex flex-col justify-around h-1/2 md:h-full md:w-2/3 gap-4'>
             <div className='flex flex-col gap-5'>
-                <h1 className='text-5xl font-black '>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
-                <p className='text-xl'>Identify the right IPOs to invest in with our research notes</p>
+                <h1 className='text-5xl 2xl:text-8xl xl:text-6xl font-black '>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
+                <h1 className='text-xl  2xl:text-3xl xl:text-2xl'>Identify the right IPOs to invest in with our research notes</h1>
             </div>
 
             <div className='relative w-full flex flex-col gap-1 '>
-                <h3 className='text-md font-black'>Open an account</h3>
+                <h3 className='text-md font-black 2xl:text-2xl xl:text-xl'>Open an account</h3>
 
                 <div className='flex bg-[#f8f8f8] h-19 items-center gap-4 p-2 rounded-xl justify-between w-fit  md:w-md '>
                     <div className='flex gap-4 w-full'>
                         <h1>+91</h1>
                         <input 
                         type="text" 
-                        className='placeholder:text-sm' 
+                        className='placeholder:text-sm ' 
                         placeholder='Enter your mobile number' 
                         value={mobileNumber} 
                         onChange={handleChangeMobileNum}/>
@@ -41,16 +41,17 @@ function Hero() {
         </div>
 
 
-        <div className=' h-1/2 flex justify-center items-center md:h-full md:w-2/3'>
+        <div className='h-1/3 flex justify-center items-center md:h-full md:w-2/3 '>
+            <div className='relative rounded-full flex items-center justify-center border-1 border-[#00000020] h-11/12 aspect-square'>
 
-            <div className='relative  rounded-full  flex items-center justify-center border-1 border-[#00000020] h-[300px] w-[300px]'>
-
-                <div className='rounded-full overflow-hidden w-9/12 h-9/12'>
-                    <img className='object-contain ' src={IPO_HERO.mainImg} alt="" />
-                </div>
+            <div className='overflow-hidden rounded-full w-9/12 h-9/12'>
+                <img className='object-cover h-full w-full rounded-full' src={IPO_HERO.mainImg} alt="" />
             </div>
-            
+
+    </div>
+    
         </div>
+
 
 
     </div>
