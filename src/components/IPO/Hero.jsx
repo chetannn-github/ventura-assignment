@@ -15,7 +15,7 @@ function Hero() {
     <div className='relative flex w-full h-[70vh] '>
 
 
-        <div className=' w-2/3 flex flex-col justify-between py-15'>
+        <div className=' w-2/3 flex flex-col justify-around py-15'>
             <div className='flex flex-col gap-5'>
                 <h1 className='text-5xl font-black '>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
                 <p className='text-xl'>Identify the right IPOs to invest in with our research notes</p>
