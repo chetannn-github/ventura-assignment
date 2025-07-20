@@ -10,7 +10,7 @@ function BreadCrumb({path}) {
     for(let i=1; i<paths.length; i++) {
         
         currSegment += "/" + paths[i];
-        segments.push({path : currSegment, label : paths[i] === "ipo" ? "IPO" : path[i]});
+        segments.push({path : currSegment, label : paths[i] === "ipo" ? "IPO" : paths[i]});
     }
 
 
