@@ -220,8 +220,8 @@ Issued in the interest of Investors</h1>
         </div>
 
 
-        <div className='flex justify-center items-center w-full text-xs'>© 2025 Ventura. All rights reserved. Built with ❤️ in India.</div>
-
+        <div className='flex justify-center items-center w-full text-xs'>© 2025 Ventura. All rights reserved.</div>
+<div className='flex justify-center items-center w-full text-xs'>Built with ❤️ in India.</div>
     </div>
   )
 }
