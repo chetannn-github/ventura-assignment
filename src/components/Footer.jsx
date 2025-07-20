@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className='bg-secondary  relative flex flex-col gap-4 rounded-3xl text-white p-10 pb-5' >
 
-        <div className='flex flex-row gap-3 justify-between border-b-1 border-b-[#ffffff11] pb-10'>
+        <div className='flex flex-row gap-20  border-b-1 border-b-[#ffffff11] pb-10'>
 
             <div className='flex flex-col gap-5 w-1/3'>
                 <div>

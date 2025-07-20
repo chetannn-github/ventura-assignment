@@ -42,8 +42,128 @@ export const ipoTimeline = [
 ];
 
 
+// export const IPO_DATA = {
+//   Upcoming: [],
+
+//   Closed: [
+//     {
+//       name: "Smartworks Coworking Spaces Limited",
+//       date: "10th Jul - 14th Jul 2025",
+//       issueSize: "₹ 576 - 606 Cr",
+//       priceBand: "₹ 387 - 407",
+//       lotValue: "₹ 14,652",
+//       lotSize: "36 Shares / 1 Lot",
+//       subscribed: "Subscribed 3.38x times in retail category",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png"
+//     },
+//     {
+//       name: "ABC Technologies Ltd",
+//       date: "1st Jul - 5th Jul 2025",
+//       issueSize: "₹ 500 Cr",
+//       priceBand: "₹ 150 - 160",
+//       lotValue: "₹ 12,000",
+//       lotSize: "75 Shares / 1 Lot",
+//       subscribed: "Subscribed 2.11x times in retail category",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
+//     },
+//     {
+//       name: "NextGen Infra Limited",
+//       date: "3rd Jul - 6th Jul 2025",
+//       issueSize: "₹ 720 Cr",
+//       priceBand: "₹ 120 - 130",
+//       lotValue: "₹ 15,600",
+//       lotSize: "120 Shares / 1 Lot",
+//       subscribed: "Subscribed 4.56x times in retail category",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
+//     },
+//     {
+//       name: "Bright Future Retail Ltd",
+//       date: "5th Jul - 9th Jul 2025",
+//       issueSize: "₹ 610 Cr",
+//       priceBand: "₹ 250 - 260",
+//       lotValue: "₹ 13,000",
+//       lotSize: "50 Shares / 1 Lot",
+//       subscribed: "Subscribed 1.85x times in retail category",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
+//     }
+//   ],
+
+//   Listed: [
+//     {
+//       name: "Crizac Limited",
+//       date: "2nd Jul - 4th Jul 2025",
+//       issueSize: "₹ 860 - 904 Cr",
+//       priceBand: "₹ 233 - 245",
+//       lotValue: "₹ 14,945",
+//       lotSize: "61 Shares / 1 Lot",
+//       listedAt: "₹ 270",
+//       gain: "+10%",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
+//     },
+//     {
+//       name: "Travel Food Services Limited",
+//       date: "7th Jul - 9th Jul 2025",
+//       issueSize: "₹ 2,000 - 2,106 Cr",
+//       priceBand: "₹ 1,045 - 1,100",
+//       lotValue: "₹ 14,300",
+//       lotSize: "13 Shares / 1 Lot",
+//       listedAt: "₹ 1,200",
+//       gain: "+12%",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3154_Logo.png"
+//     },
+//     {
+//       name: "Indo Gulf Cropsciences Ltd",
+//       date: "26th Jun - 30th Jun 2025",
+//       issueSize: "₹ 199 - 210 Cr",
+//       priceBand: "₹ 105 - 111",
+//       lotValue: "₹ 14,985",
+//       lotSize: "135 Shares / 1 Lot",
+//       listedAt: "₹ 124",
+//       gain: "+11.5%",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3154_Logo.png"
+//     },
+//     {
+//       name: "Greenleaf Agrotech Ltd",
+//       date: "20th Jun - 24th Jun 2025",
+//       issueSize: "₹ 450 Cr",
+//       priceBand: "₹ 88 - 92",
+//       lotValue: "₹ 11,960",
+//       lotSize: "130 Shares / 1 Lot",
+//       listedAt: "₹ 101",
+//       gain: "+9.8%",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3154_Logo.png"
+//     }
+//   ],
+
+//   openIPO: [
+//     {
+//       name: "CFF Fluid Control Limited",
+//       date: "9th Jul - 11th Jul 2025",
+//       issueSize: "₹ 88 Cr",
+//       priceBand: "₹ 585",
+//       lotValue: "₹ 234,000",
+//       lotSize: "400 Shares / 1 Lot",
+//       subscribed: "Subscribed 1.20x times in retail category",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3066_Logo.png"
+//     },
+//     {
+//       name: "Mega Buildtech Limited",
+//       date: "15th Jul - 18th Jul 2025",
+//       issueSize: "₹ 950 Cr",
+//       priceBand: "₹ 220 - 230",
+//       lotValue: "₹ 14,900",
+//       lotSize: "65 Shares / 1 Lot",
+//       subscribed: "Subscribed 2.75x times in retail category",
+//       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png"
+//     }
+//   ]
+// };
+
+
+
 export const IPO_DATA = {
-  Upcoming: [],
+  Upcoming: [
+  ],
 
   Closed: [
     {
@@ -54,37 +174,14 @@ export const IPO_DATA = {
       lotValue: "₹ 14,652",
       lotSize: "36 Shares / 1 Lot",
       subscribed: "Subscribed 3.38x times in retail category",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png"
-    },
-    {
-      name: "ABC Technologies Ltd",
-      date: "1st Jul - 5th Jul 2025",
-      issueSize: "₹ 500 Cr",
-      priceBand: "₹ 150 - 160",
-      lotValue: "₹ 12,000",
-      lotSize: "75 Shares / 1 Lot",
-      subscribed: "Subscribed 2.11x times in retail category",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
-    },
-    {
-      name: "NextGen Infra Limited",
-      date: "3rd Jul - 6th Jul 2025",
-      issueSize: "₹ 720 Cr",
-      priceBand: "₹ 120 - 130",
-      lotValue: "₹ 15,600",
-      lotSize: "120 Shares / 1 Lot",
-      subscribed: "Subscribed 4.56x times in retail category",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
-    },
-    {
-      name: "Bright Future Retail Ltd",
-      date: "5th Jul - 9th Jul 2025",
-      issueSize: "₹ 610 Cr",
-      priceBand: "₹ 250 - 260",
-      lotValue: "₹ 13,000",
-      lotSize: "50 Shares / 1 Lot",
-      subscribed: "Subscribed 1.85x times in retail category",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
+      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png",
+      timeline: { biddingStart: "10/07/2025", biddingEnd: "14/07/2025", allotmentFinalisation: "15/07/2025", refundInitiation: "-", dematTransfer: "-", listingDate: "-" },
+      aboutCompany: "Workspace solutions provider offering flexible office spaces to corporates.",
+      financials: {
+        "2024": { revenue: "₹200 Cr", totalAssets: "₹150 Cr", profit: "₹25 Cr" },
+        "2023": { revenue: "₹180 Cr", totalAssets: "₹140 Cr", profit: "₹20 Cr" },
+        "2022": { revenue: "₹160 Cr", totalAssets: "₹120 Cr", profit: "₹18 Cr" }
+      }
     }
   ],
 
@@ -98,40 +195,15 @@ export const IPO_DATA = {
       lotSize: "61 Shares / 1 Lot",
       listedAt: "₹ 270",
       gain: "+10%",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png"
-    },
-    {
-      name: "Travel Food Services Limited",
-      date: "7th Jul - 9th Jul 2025",
-      issueSize: "₹ 2,000 - 2,106 Cr",
-      priceBand: "₹ 1,045 - 1,100",
-      lotValue: "₹ 14,300",
-      lotSize: "13 Shares / 1 Lot",
-      listedAt: "₹ 1,200",
-      gain: "+12%",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3154_Logo.png"
-    },
-    {
-      name: "Indo Gulf Cropsciences Ltd",
-      date: "26th Jun - 30th Jun 2025",
-      issueSize: "₹ 199 - 210 Cr",
-      priceBand: "₹ 105 - 111",
-      lotValue: "₹ 14,985",
-      lotSize: "135 Shares / 1 Lot",
-      listedAt: "₹ 124",
-      gain: "+11.5%",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3154_Logo.png"
-    },
-    {
-      name: "Greenleaf Agrotech Ltd",
-      date: "20th Jun - 24th Jun 2025",
-      issueSize: "₹ 450 Cr",
-      priceBand: "₹ 88 - 92",
-      lotValue: "₹ 11,960",
-      lotSize: "130 Shares / 1 Lot",
-      listedAt: "₹ 101",
-      gain: "+9.8%",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3154_Logo.png"
+      subscribed: "Subscribed 5.1x times in retail category",
+      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png",
+      timeline: { biddingStart: "02/07/2025", biddingEnd: "04/07/2025", allotmentFinalisation: "05/07/2025", refundInitiation: "06/07/2025", dematTransfer: "06/07/2025", listingDate: "09/07/2025" },
+      aboutCompany: "Leading supplier of industrial equipment and services.",
+      financials: {
+        "2024": { revenue: "₹550 Cr", totalAssets: "₹300 Cr", profit: "₹70 Cr" },
+        "2023": { revenue: "₹480 Cr", totalAssets: "₹270 Cr", profit: "₹55 Cr" },
+        "2022": { revenue: "₹400 Cr", totalAssets: "₹230 Cr", profit: "₹45 Cr" }
+      }
     }
   ],
 
@@ -144,17 +216,14 @@ export const IPO_DATA = {
       lotValue: "₹ 234,000",
       lotSize: "400 Shares / 1 Lot",
       subscribed: "Subscribed 1.20x times in retail category",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3066_Logo.png"
-    },
-    {
-      name: "Mega Buildtech Limited",
-      date: "15th Jul - 18th Jul 2025",
-      issueSize: "₹ 950 Cr",
-      priceBand: "₹ 220 - 230",
-      lotValue: "₹ 14,900",
-      lotSize: "65 Shares / 1 Lot",
-      subscribed: "Subscribed 2.75x times in retail category",
-      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png"
+      companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3066_Logo.png",
+      timeline: { biddingStart: "09/07/2025", biddingEnd: "11/07/2025", allotmentFinalisation: "12/07/2025", refundInitiation: "13/07/2025", dematTransfer: "13/07/2025", listingDate: "16/07/2025" },
+      aboutCompany: "Specialized manufacturer of fluid control equipment for oil and gas sector.",
+      financials: {
+        "2024": { revenue: "₹110 Cr", totalAssets: "₹65 Cr", profit: "₹12 Cr" },
+        "2023": { revenue: "₹95 Cr", totalAssets: "₹60 Cr", profit: "₹10 Cr" },
+        "2022": { revenue: "₹80 Cr", totalAssets: "₹50 Cr", profit: "₹9 Cr" }
+      }
     }
   ]
 };

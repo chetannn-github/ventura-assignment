@@ -14,7 +14,6 @@ function IPOList() {
       <Hero/>
       <OpenIPOs/>
       <UpcomingIPO/>
-      <Footer/>
     </div>
   )
 }

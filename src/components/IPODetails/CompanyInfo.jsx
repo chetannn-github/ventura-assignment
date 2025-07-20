@@ -11,7 +11,7 @@ function CompanyInfo({companyInfo}) {
 
     let currPath = useLocation();
     return (
-        <div className='w-full flex flex-col gap-5 relative h-[300vh]'>
+        <div className='flex flex-col gap-5 relative h-[100%] w-[80%] '>
             <div className='h-20  w-full flex items-center '>
 
                 <div className='flex gap-5 items-center'>
@@ -32,14 +32,13 @@ function CompanyInfo({companyInfo}) {
             
             </div>
 
-            <div className='border-1 border-[#00000020] w-full p-5 rounded-2xl'>
-                <h3>IPO Details</h3>
+
+            <div className='border-1 border-[#00000020] w-full p-5 rounded-2xl gap-8 flex flex-col'>
+                <h3 className='text-sm'>IPO Details</h3>
 
 
-                <div className=' h-[200px] flex flex-col justify-between  pb-3'>
-        
-
-                    <div className='flex flex-wrap justify-between h-1/2  p-4'>
+                <div className=' h-[200px] flex flex-col justify-between  pb-3  text-sm'>
+                    <div className='flex flex-wrap justify-between h-1/2  '>
                         <div className=''>
                             <h4 className='text-[#6B6874]'>Issue Size</h4>
                             <h4 className='font-black text-sm'>{issueSize}</h4>
@@ -106,7 +105,7 @@ function CompanyInfo({companyInfo}) {
 
             </div>
 
-            <Footer/>
+            
             
 
         </div>
