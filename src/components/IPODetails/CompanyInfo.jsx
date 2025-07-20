@@ -48,49 +48,49 @@ function CompanyInfo({companyInfo}) {
 
                 <div className=' h-[140px] flex flex-col justify-between   text-sm'>
                     <div className='flex flex-wrap justify-between h-full '>
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Issue Size</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{issueSize}</h4>
 
                         </div>
 
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Price Range</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{priceBand}</h4>
 
                         </div>
 
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Minimum Amount</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{lotValue}</h4>
 
                         </div>
                         
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Lot size</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{lotSize}</h4>
 
                         </div>
 
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Issue Dates</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{date}</h4>
 
                         </div>
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Listed On</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{listedOn}</h4>
 
                         </div>
                        
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Listed Price</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{listedAt}</h4>
 
                         </div>
 
 
-                        <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
+                        <div className='w-1/2 md:w-1/3 text-xs lg:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Listed Gains</h4>
                             <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{gain}</h4>
 
