@@ -145,10 +145,6 @@ function CompanyInfo({companyInfo}) {
 
                 </div>
 
-
-
-
-
             </div>
 
             

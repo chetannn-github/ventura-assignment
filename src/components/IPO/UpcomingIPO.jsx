@@ -3,6 +3,7 @@ import IPOCompanyList from './IPOCompanyList';
 
 function UpcomingIPO() {
     let [selectedIPOType,setSelectedIPOType] = useState('Upcoming');
+    
     return (
         <div className='relative h-fit flex flex-col gap-10'>
             
@@ -24,17 +25,6 @@ function UpcomingIPO() {
 
                  <IPOCompanyList listingType={selectedIPOType}/>
             </div>
-
-               
-
-
-
-
-
-
-
-
-
             
             <div>
             </div>

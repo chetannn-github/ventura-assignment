@@ -6,7 +6,6 @@ import IPOCard from './IPOCard';
 function IPOCompanyList({listingType}) {
     const companyData = IPO_DATA[listingType];
     
-
     if(companyData.length == 0) {
         return (
             <div className='flex items-center justify-center flex-col h-[60vh] xl:h-[50vh]'>
