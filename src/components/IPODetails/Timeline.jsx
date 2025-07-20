@@ -11,16 +11,18 @@ function Timeline({timeline}) {
 
             {timeline.map((val,idx,arr) => (
                 <>
-                <div className='flex md:flex-col gap-5'>
-                    <div className='flex flex-col md:flex-row items-center'>
+                <div className='flex md:flex-col gap-5 md:w-[500px]'>
+
+
+                    <div className='flex flex-col md:flex-row items-center '>
                         <div 
-                        className={`h-[35px] w-[35px] rounded-full ${isFutureDate(val.date) ? "bg-[#e0dFe7] ": "bg-green-600"} flex justify-center items-center overflow-hidden`}
+                        className={`h-[45px] w-[45px] rounded-full ${isFutureDate(val.date) ? "bg-[#e0dFe7] ": "bg-green-600"} flex justify-center items-center overflow-hidden`}
                         >
                             {!isFutureDate(val.date) && <Check color='white' />}
                         </div>
 
                         {idx !== timeline.length-1 && (
-                        <div className={`h-[45px] w-[3px] md:h-[3px] md:w-[calc(100%-35px)] ${isFutureDate(arr[idx+1].date) ? "bg-[#e0dFe7] ": "bg-green-600"}`}></div>)}
+                        <div className={`h-[45px] w-[3px] md:h-[3px] md:w-[calc(100%-45px)] ${isFutureDate(arr[idx+1].date) ? "bg-[#e0dFe7] ": "bg-green-600"}`}></div>)}
 
                     </div>
 
