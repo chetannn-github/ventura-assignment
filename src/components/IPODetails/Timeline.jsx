@@ -11,7 +11,7 @@ function Timeline({timeline}) {
 
             {timeline.map((val,idx,arr) => (
                 <>
-                <div className='flex md:flex-col gap-5 w-full'>
+                <div className='flex md:flex-col gap-5'>
                     <div className='flex flex-col md:flex-row items-center'>
                         <div 
                         className={`h-[35px] w-[35px] rounded-full ${isFutureDate(val.date) ? "bg-[#e0dFe7] ": "bg-green-600"} flex justify-center items-center overflow-hidden`}

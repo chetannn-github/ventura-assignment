@@ -14,7 +14,7 @@ function BreadCrumb({path}) {
 
 
     return (
-    <div className='flex items-center gap-2 text-[#777485] py-2 text-sm' >
+    <div className='flex items-center gap-2 text-[#777485] py-2 text-xs flex-wrap' >
         {/* {console.log(segments)} */}
         <Link to={"/"}><House size={16} /></Link>
         {segments.map((val,idx)=>( idx !== segments.length-1 ?
