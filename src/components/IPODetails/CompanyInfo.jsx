@@ -129,8 +129,8 @@ function CompanyInfo({companyInfo}) {
                             <div className='flex gap-2 items-center text-sm' key={idx}>
                                 <h4 className='text-sm'>{val.year}</h4>
                                 <div className='h-2 w-3 rounded-3xl ' id={`bar${idx+1}`}></div>
-                                <div className='h-[33px] w-45 rounded-r-md' id={`bar${idx+1}`}></div>
-                                <div>{val[selectedSection.split(" ").map((val,idx)=>(idx==0 ? val.toLowerCase() : val)).join("")]}</div>
+                                <div className='h-[32px] w-30 md:w-45 rounded-r-md' id={`bar${idx+1}`}></div>
+                                <div className='text-xs md:text-sm'>{val[selectedSection.split(" ").map((val,idx)=>(idx==0 ? val.toLowerCase() : val)).join("")]}</div>
                             </div>
                         ))
                     }
