@@ -7,6 +7,7 @@ export const IPO_HERO = {
 }
 
 export const COMPANY_LOGO = "https://ipo.ventura1.com/aceipo/admin/logo/3294_Logo.png"
+export const DOWNLOAD_BTN = "https://d10b7kv2y188ox.cloudfront.net/react/document-download.svg"
 
 export const ipoTimeline = [
   {
@@ -40,6 +41,8 @@ export const ipoTimeline = [
     status: "pending"
   }
 ];
+
+
 
 
 // export const IPO_DATA = {

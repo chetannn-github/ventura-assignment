@@ -3,6 +3,7 @@ import GoBack from '../GoBack'
 import { ChevronLeft } from 'lucide-react'
 import { useLocation } from 'react-router';
 import Timeline from './Timeline';
+import { DOWNLOAD_BTN, downloadPDF } from '../../utils/constant';
 
 function CompanyInfo({companyInfo}) {
     let {companyLogo,date, issueSize, priceBand,name,lotValue,lotSize, listedAt, gain, listedOn, financials, timeline} = companyInfo;
@@ -14,20 +15,27 @@ function CompanyInfo({companyInfo}) {
         <div className='flex flex-col gap-5 relative h-[100%] w-[100%] pb-7 lg:w-[80%] '>
         
             <div className='h-20  w-full flex items-center '>
-
-                <div className='flex gap-5 items-center'>
-
-                    <div className='p-2 border-1 border-[#00000020] rounded-xl h-3/4 flex items-center justify-center' >
-                        <GoBack path={currPath.pathname}><ChevronLeft /></GoBack>
-                    </div>
-                    
-
-                    <div   className='flex gap-2 items-center'>
-                        <img src={companyLogo} alt="" className='h-[40px] w-[40px] rounded-full border-1 border-[#00000020]'/>
-                        <div>
-                            <h2 className='font-black'>{name.split(" ")[0].toUpperCase()}</h2>
-                            <h2 className='text-[#6b6874] text-sm'>{companyInfo.name}</h2>
+                <div className='flex justify-between w-full'>
+                    <div className='flex gap-5 items-center'>
+                        <div className='p-2 border-1 border-[#00000020] rounded-xl h-3/4 flex items-center justify-center' >
+                            <GoBack path={currPath.pathname}><ChevronLeft /></GoBack>
                         </div>
+                        
+
+                        <div className='flex gap-2 items-center'>
+                            <img src={companyLogo} alt="" className='h-[40px] w-[40px] rounded-full border-1 border-[#00000020]'/>
+                            <div>
+                                <h2 className='font-black'>{name.split(" ")[0].toUpperCase()}</h2>
+                                <h2 className='text-[#6b6874] text-sm'>{companyInfo.name}</h2>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div className='flex justify-center items-center'>
+                            <a href="https://ipo.ventura1.com/aceipo/Admin/reports/3066.pdf" target="_blank" rel="noopener noreferrer">
+                                <img src={DOWNLOAD_BTN}></img>
+                            </a>
                     </div>
                 </div>
             
