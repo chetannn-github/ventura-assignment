@@ -10,7 +10,7 @@ import Footer from '../../components/Footer';
 function IPOList() {
   let currPath = useLocation();
   return (
-    <div >
+    <div className='w-full relative flex flex-col gap-15  h-fit '>
       <Hero/>
       <OpenIPOs/>
       <UpcomingIPO/>

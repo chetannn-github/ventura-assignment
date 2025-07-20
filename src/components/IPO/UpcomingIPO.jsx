@@ -5,6 +5,7 @@ function UpcomingIPO() {
     let [selectedIPOType,setSelectedIPOType] = useState('Upcoming');
     return (
         <div className='relative min-h-[50vh] flex flex-col gap-10 '>
+            
             <h1 className='text-4xl font-black text-center'>Upcoming & recent <span className='text-primary'>IPOs</span></h1>
             
             <div className='w-full h-full p-4 rounded-3xl bottom-1 border-[#00000020] border-1'>

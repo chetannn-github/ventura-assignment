@@ -15,14 +15,6 @@ function IPOCompanyList({listingType}) {
         )
     }
 
-    
-
-    // name: "Smartworks Coworking Spaces Limited",
-    //   date: "10th Jul - 14th Jul 2025",
-    //   issueSize: "₹ 576 - 606 Cr",
-    //   priceBand: "₹ 387 - 407",
-    //   lotValue
-
     return (
         
         <div className='relative flex flex-col w-full py-5'>
@@ -33,11 +25,13 @@ function IPOCompanyList({listingType}) {
                     </div>
                 )}
             </div>
+
+
             {companyData.map((val, idx)=>
             <Link to={`/ipo/${val?.name.split(" ").join("-").toLowerCase()}`} key={val.name}>
                 <div className='flex justify-between py-3' >
 
-                <div className='flex gap-2 w-1/4  '>
+                <div className='flex gap-2 w-1/4'>
                     <div >
                         <img className='h-5' src={val?.companyLogo}></img>
                     </div>
@@ -53,7 +47,7 @@ function IPOCompanyList({listingType}) {
                 <div className='w-1/4  justify-center flex font-black text-sm'>{val?.issueSize}</div>
                 <div className='w-1/4  justify-center flex font-black text-sm'>{val?.priceBand}</div>
 
-                <div className='flex-col w-1/4   flex items-center'>
+                <div className='flex-col w-1/4 flex items-center'>
                     <h4 className='font-black text-sm'>{val?.lotValue}</h4>
                     <p className='text-xs text-[#0000008f]'>{val?.lotSize}</p>
                 </div>

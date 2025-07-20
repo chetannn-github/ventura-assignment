@@ -5,9 +5,10 @@ import { IPO_DATA } from '../../utils/constant'
 function OpenIPOs() {
   const openIPO = IPO_DATA.openIPO
   return (
-    <div className='h-[65vh] flex flex-col  gap-10 '>
+    <div className=' flex flex-col  gap-10 '>
         <h1 className='text-4xl font-black'>Open <span className='text-primary'>IPOs</span></h1>
-        <div className='flex gap-6 w-full'>
+        <div className='flex flex-col md:flex-row gap-6 w-full'>
+          {openIPO.map((val,idx)=><IPOCard key={val.name} companyData={val}/>)}
           {openIPO.map((val,idx)=><IPOCard key={val.name} companyData={val}/>)}
         </div>
     </div>
