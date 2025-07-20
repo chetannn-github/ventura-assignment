@@ -162,8 +162,7 @@ export const ipoTimeline = [
 
 
 export const IPO_DATA = {
-  Upcoming: [
-  ],
+  Upcoming: [],
 
   Closed: [
     {
@@ -177,11 +176,14 @@ export const IPO_DATA = {
       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png",
       timeline: { biddingStart: "10/07/2025", biddingEnd: "14/07/2025", allotmentFinalisation: "15/07/2025", refundInitiation: "-", dematTransfer: "-", listingDate: "-" },
       aboutCompany: "Workspace solutions provider offering flexible office spaces to corporates.",
-      financials: {
-        "2024": { revenue: "₹200 Cr", totalAssets: "₹150 Cr", profit: "₹25 Cr" },
-        "2023": { revenue: "₹180 Cr", totalAssets: "₹140 Cr", profit: "₹20 Cr" },
-        "2022": { revenue: "₹160 Cr", totalAssets: "₹120 Cr", profit: "₹18 Cr" }
-      }
+      financials: [
+        { year: "2024", revenue: "₹200 Cr", totalAssets: "₹150 Cr", profit: "₹25 Cr" },
+        { year: "2023", revenue: "₹180 Cr", totalAssets: "₹140 Cr", profit: "₹20 Cr" },
+        { year: "2022", revenue: "₹160 Cr", totalAssets: "₹120 Cr", profit: "₹18 Cr" }
+      ],
+      listedAt: "-",
+      gain: "-",
+      listedOn: "-"
     }
   ],
 
@@ -195,15 +197,16 @@ export const IPO_DATA = {
       lotSize: "61 Shares / 1 Lot",
       listedAt: "₹ 270",
       gain: "+10%",
+      listedOn: "09/07/2025",
       subscribed: "Subscribed 5.1x times in retail category",
       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png",
       timeline: { biddingStart: "02/07/2025", biddingEnd: "04/07/2025", allotmentFinalisation: "05/07/2025", refundInitiation: "06/07/2025", dematTransfer: "06/07/2025", listingDate: "09/07/2025" },
       aboutCompany: "Leading supplier of industrial equipment and services.",
-      financials: {
-        "2024": { revenue: "₹550 Cr", totalAssets: "₹300 Cr", profit: "₹70 Cr" },
-        "2023": { revenue: "₹480 Cr", totalAssets: "₹270 Cr", profit: "₹55 Cr" },
-        "2022": { revenue: "₹400 Cr", totalAssets: "₹230 Cr", profit: "₹45 Cr" }
-      }
+      financials: [
+        { year: "2024", revenue: "₹550 Cr", totalAssets: "₹300 Cr", profit: "₹70 Cr" },
+        { year: "2023", revenue: "₹480 Cr", totalAssets: "₹270 Cr", profit: "₹55 Cr" },
+        { year: "2022", revenue: "₹400 Cr", totalAssets: "₹230 Cr", profit: "₹45 Cr" }
+      ]
     }
   ],
 
@@ -219,11 +222,14 @@ export const IPO_DATA = {
       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3066_Logo.png",
       timeline: { biddingStart: "09/07/2025", biddingEnd: "11/07/2025", allotmentFinalisation: "12/07/2025", refundInitiation: "13/07/2025", dematTransfer: "13/07/2025", listingDate: "16/07/2025" },
       aboutCompany: "Specialized manufacturer of fluid control equipment for oil and gas sector.",
-      financials: {
-        "2024": { revenue: "₹110 Cr", totalAssets: "₹65 Cr", profit: "₹12 Cr" },
-        "2023": { revenue: "₹95 Cr", totalAssets: "₹60 Cr", profit: "₹10 Cr" },
-        "2022": { revenue: "₹80 Cr", totalAssets: "₹50 Cr", profit: "₹9 Cr" }
-      }
+      financials: [
+        { year: "2024", revenue: "₹110 Cr", totalAssets: "₹65 Cr", profit: "₹12 Cr" },
+        { year: "2023", revenue: "₹95 Cr", totalAssets: "₹60 Cr", profit: "₹10 Cr" },
+        { year: "2022", revenue: "₹80 Cr", totalAssets: "₹50 Cr", profit: "₹9 Cr" }
+      ],
+      listedAt: "-",
+      gain: "-",
+      listedOn: "-"
     }
   ]
 };

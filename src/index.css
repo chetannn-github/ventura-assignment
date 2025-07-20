@@ -36,3 +36,17 @@ body {
 a{
     text-decoration: solid;
 }
+
+
+#bar1 {
+  background: linear-gradient(rgb(57, 55, 69) 0%, rgb(92, 89, 104) 100%)
+}
+
+
+#bar2{
+  background: linear-gradient(rgb(114, 96, 226) 0%, rgb(114, 96, 226) 100%);
+}
+
+#bar3{
+  background: linear-gradient(rgb(250, 79, 0) 0%, rgb(255, 132, 75) 100%);
+}
