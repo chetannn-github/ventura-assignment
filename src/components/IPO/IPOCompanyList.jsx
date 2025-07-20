@@ -1,6 +1,7 @@
 import React from 'react'
 import { IPO_DATA, NO_IPO_IMAGE_URL } from '../../utils/constant'
 import { Link } from 'react-router';
+import IPOCard from './IPOCard';
 
 function IPOCompanyList({listingType}) {
     const companyData = IPO_DATA[listingType];
@@ -20,7 +21,7 @@ function IPOCompanyList({listingType}) {
         <div className='relative flex flex-col w-full py-5'>
             <div className='flex bg-[#f8f8f8]' >
                 {["Company","Issue size","Price range","Min. Amount"].map((val, idx)=>
-                    <div key= {val} className='relative w-1/4 flex justify-center text-xs md:text-sm' >
+                    <div key= {val} className='hidden relative w-1/4 md:flex justify-center text-xs md:text-sm' >
                         {val}
                     </div>
                 )}
@@ -29,7 +30,7 @@ function IPOCompanyList({listingType}) {
 
             {companyData.map((val, idx)=>
             <Link to={`/ipo/${val?.name.split(" ").join("-").toLowerCase()}`} key={val.name}>
-                <div className='flex justify-between py-3' >
+                <div className='hidden md:flex justify-between py-3' >
 
                 <div className='flex gap-2 w-1/4'>
                     <div >
@@ -54,6 +55,12 @@ function IPOCompanyList({listingType}) {
                
                 </div> 
 
+                
+                <div className='md:hidden'>
+                    <IPOCard companyData={val}/>
+                </div>
+
+                
                 <div className='bg-[#ffeee5] w-full flex items-center justify-center h-10 font-bold rounded-xl md:text-sm text-xs'>
                     {listingType === "Closed" ? val?.subscribed : `Listed at ${val?.listedAt} with  ${val?.gain} gains.`}
                 </div>
