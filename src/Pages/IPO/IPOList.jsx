@@ -5,6 +5,7 @@ import BreadCrumb from '../../components/BreadCrumb';
 import Hero from '../../components/IPO/Hero';
 import OpenIPOs from '../../components/IPO/OpenIPOs';
 import UpcomingIPO from '../../components//IPO/UpcomingIPO';
+import Footer from '../../components/Footer';
 
 function IPOList() {
   let currPath = useLocation();
@@ -13,7 +14,7 @@ function IPOList() {
       <Hero/>
       <OpenIPOs/>
       <UpcomingIPO/>
-
+      <Footer/>
     </div>
   )
 }
