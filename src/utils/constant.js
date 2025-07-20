@@ -166,7 +166,7 @@ export const IPO_DATA = {
 
   Closed: [
     {
-      name: "Smartworks Coworking Spaces Limited",
+      name: "Smartworks Coworking LTD",
       date: "10th Jul - 14th Jul 2025",
       issueSize: "₹ 576 - 606 Cr",
       priceBand: "₹ 387 - 407",
