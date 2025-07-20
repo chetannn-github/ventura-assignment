@@ -4,11 +4,11 @@ import { LOGO_URL, WHITE_LOGO_URL } from '../utils/constant'
 
 function Footer() {
   return (
-    <div className='bg-secondary  relative flex flex-col gap-4 rounded-3xl text-white p-10 pb-5' >
+    <div className='bg-secondary relative w-full flex flex-col gap-4 rounded-3xl text-white p-10 pb-5' >
 
-        <div className='flex flex-row gap-20  border-b-1 border-b-[#ffffff11] pb-10'>
+        <div className='flex flex-col  gap-4 md:flex-row lg:gap-20 border-b-1 border-b-[#ffffff11] pb-10'>
 
-            <div className='flex flex-col gap-5 w-1/3'>
+            <div className='flex flex-col gap-5 w-full md:w-1/3'>
                 <div>
                     <img src={WHITE_LOGO_URL}></img>
                 </div>
@@ -98,8 +98,8 @@ function Footer() {
 
 
         <div className='flex flex-col gap-4'>
-            <div className='flex w-full row gap-4 '>
-                <div className='min-w-[170px] flex '><h1 className=' text-sm  min-w-[100px] '>Tools & Calculators</h1></div>
+            <div className='flex w-full row gap-3'>
+                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px] '>Tools & Calculators</h1></div>
                 
                 <ul className="list-disc list-inside flex flex-wrap gap-1  text-[#B0ADBE] text-sm">
                     <li><a className = "hover:text-primary"  href="">Retirement Calculator</a></li>
@@ -118,7 +118,7 @@ function Footer() {
             </div>
 
             <div className='flex w-full row gap-4'>
-                <div className='min-w-[170px] flex '><h1 className=' text-sm  min-w-[100px]'>Top Indices</h1></div>
+                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Top Indices</h1></div>
                 <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
                     <li><a className="hover:text-primary" href="">All Indices</a></li>
                     <li><a className="hover:text-primary" href="">Nifty 50</a></li>
@@ -138,7 +138,7 @@ function Footer() {
 
            
             <div className='flex w-full row gap-4'>
-                <div  className='min-w-[170px] flex '><h1 className=' text-sm  min-w-[100px]'>Share Market Guide</h1></div>
+                <div  className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Share Market Guide</h1></div>
 
                 <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
                     <li><a className="hover:text-primary" href="">Online Trading</a></li>
@@ -154,7 +154,7 @@ function Footer() {
 
 
             <div className='flex w-full row gap-4'>
-                <div className='min-w-[170px] flex '><h1 className=' text-sm  min-w-[100px]'>Stock Sectors</h1></div>
+                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Stock Sectors</h1></div>
 
                 <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
                     <li><a className="hover:text-primary" href="">All Sectors</a></li>
@@ -174,7 +174,7 @@ function Footer() {
 
 
             <div className='flex w-full row gap-4'>
-                <div className='min-w-[170px] flex '><h1 className=' text-sm'>Daily Market Updates</h1></div>
+                <div className='min-w-[150px] flex '><h1 className=' text-sm'>Daily Market Updates</h1></div>
 
                 <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
                     <li><a className="hover:text-primary" href="">Daily Market Outlook</a></li>
@@ -186,7 +186,7 @@ function Footer() {
 
 
             <div className='flex w-full row gap-4'>
-                <div className='min-w-[170px] flex '><h1 className=' text-sm  min-w-[100px]'>Trending Blogs</h1></div>
+                <div className='min-w-[150px] flex '><h1 className=' text-sm  min-w-[100px]'>Trending Blogs</h1></div>
 
                 <ul className="list-disc list-inside flex flex-wrap gap-1 text-[#B0ADBE] text-sm">
                     <li><a className="hover:text-primary" href="">Upcoming IPOs in June 2025</a></li>
@@ -220,7 +220,7 @@ Issued in the interest of Investors</h1>
         </div>
 
 
-        <div className='flex justify-center items-center w-full '>© 2025 Ventura. All rights reserved. Built with ❤️ in India.</div>
+        <div className='flex justify-center items-center w-full text-xs'>© 2025 Ventura. All rights reserved. Built with ❤️ in India.</div>
 
     </div>
   )
