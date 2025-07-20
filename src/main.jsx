@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
-import IPOList from "./Pages/IPO/IPOList";
+import IPOMain from "./Pages/IPO/IPOMain";
 import Home from "./Pages/Home/Home";
 import IPODetail from "./Pages/IPO/IPODetail";
 import IPO from "./Pages/IPO/IPO";
@@ -18,7 +18,7 @@ ReactDOM.createRoot(root).render(
       <Route path="/" element={<Home/>}/>
 
       <Route path="/ipo" element = {<IPO/>}>
-        <Route index element={<IPOList/>}/>
+        <Route index element={<IPOMain/>}/>
         <Route path=":companyID" element={<IPODetail/>} />
       </Route>
     </Routes>
