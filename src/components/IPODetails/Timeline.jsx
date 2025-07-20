@@ -7,10 +7,12 @@ function Timeline({timeline}) {
     <div className='border-1 border-[#00000020] w-full p-5 rounded-2xl flex flex-col gap-4 '>
         <h3>IPO Timeline</h3>
 
-        <div className='flex flex-col md:flex-row px-2 '>
+        <div className='md:flex md:flex-row px-2 '>
+
             {timeline.map((val,idx,arr) => (
-                <div className='flex flex-col gap-2 w-full'>
-                    <div className='flex items-center'>
+                <>
+                <div className='flex md:flex-col gap-5 w-full'>
+                    <div className='flex flex-col md:flex-row items-center'>
                         <div 
                         className={`h-[35px] w-[35px] rounded-full ${isFutureDate(val.date) ? "bg-[#e0dFe7] ": "bg-green-600"} flex justify-center items-center overflow-hidden`}
                         >
@@ -18,7 +20,7 @@ function Timeline({timeline}) {
                         </div>
 
                         {idx !== timeline.length-1 && (
-                        <div className={`h-[3px] w-[calc(100%-35px)] ${isFutureDate(arr[idx+1].date) ? "bg-[#e0dFe7] ": "bg-green-600"}`}></div>)}
+                        <div className={`h-[45px] w-[3px] md:h-[3px] md:w-[calc(100%-35px)] ${isFutureDate(arr[idx+1].date) ? "bg-[#e0dFe7] ": "bg-green-600"}`}></div>)}
 
                     </div>
 
@@ -28,6 +30,10 @@ function Timeline({timeline}) {
                     </div>
             
                 </div>
+
+                </>
+
+
             ))}
         </div>
         
