@@ -3,9 +3,10 @@ import GoBack from '../GoBack'
 import { ChevronLeft } from 'lucide-react'
 import { useLocation } from 'react-router';
 import Footer from '../Footer';
+import Timeline from './Timeline';
 
 function CompanyInfo({companyInfo}) {
-    let {companyLogo,date, issueSize, priceBand,name,lotValue,lotSize, listedAt, gain, listedOn, financials} = companyInfo;
+    let {companyLogo,date, issueSize, priceBand,name,lotValue,lotSize, listedAt, gain, listedOn, financials, timeline} = companyInfo;
     let [selectedSection, setSelectionSection] = useState("Revenue");
 
 
@@ -92,11 +93,11 @@ function CompanyInfo({companyInfo}) {
 
             </div>
 
+            <Timeline timeline= {timeline}/>
 
+            
 
-            <div className='border-1 border-[#00000020] w-full p-5 rounded-2xl'>
-                <h3>IPO Timeline</h3>
-            </div>
+            
 
             <div className='border-1 border-[#00000020] w-full p-5 rounded-2xl'>
                 <h3>About the company</h3>

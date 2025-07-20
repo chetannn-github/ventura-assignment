@@ -174,7 +174,14 @@ export const IPO_DATA = {
       lotSize: "36 Shares / 1 Lot",
       subscribed: "Subscribed 3.38x times in retail category",
       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3378_Logo.png",
-      timeline: { biddingStart: "10/07/2025", biddingEnd: "14/07/2025", allotmentFinalisation: "15/07/2025", refundInitiation: "-", dematTransfer: "-", listingDate: "-" },
+      timeline: [
+        { label: "Bidding Starts", date: "10/07/2025" },
+        { label: "Bidding Ends", date: "14/07/2025" },
+        { label: "Allotment Finalisation", date: "15/07/2025" },
+        { label: "Refund Initiation", date: "-" },
+        { label: "Demat Transfer", date: "-" },
+        { label: "Listing Date", date: "-" }
+      ],
       aboutCompany: "Workspace solutions provider offering flexible office spaces to corporates.",
       financials: [
         { year: "2024", revenue: "₹200 Cr", totalAssets: "₹150 Cr", profit: "₹25 Cr" },
@@ -200,7 +207,14 @@ export const IPO_DATA = {
       listedOn: "09/07/2025",
       subscribed: "Subscribed 5.1x times in retail category",
       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3297_Logo.png",
-      timeline: { biddingStart: "02/07/2025", biddingEnd: "04/07/2025", allotmentFinalisation: "05/07/2025", refundInitiation: "06/07/2025", dematTransfer: "06/07/2025", listingDate: "09/07/2025" },
+      timeline: [
+        { label: "Bidding Starts", date: "02/07/2025" },
+        { label: "Bidding Ends", date: "04/07/2025" },
+        { label: "Allotment Finalisation", date: "05/07/2025" },
+        { label: "Refund Initiation", date: "06/07/2025" },
+        { label: "Demat Transfer", date: "06/07/2025" },
+        { label: "Listing Date", date: "09/07/2025" }
+      ],
       aboutCompany: "Leading supplier of industrial equipment and services.",
       financials: [
         { year: "2024", revenue: "₹550 Cr", totalAssets: "₹300 Cr", profit: "₹70 Cr" },
@@ -220,7 +234,14 @@ export const IPO_DATA = {
       lotSize: "400 Shares / 1 Lot",
       subscribed: "Subscribed 1.20x times in retail category",
       companyLogo: "https://ipo.ventura1.com/aceipo/admin/logo/3066_Logo.png",
-      timeline: { biddingStart: "09/07/2025", biddingEnd: "11/07/2025", allotmentFinalisation: "12/07/2025", refundInitiation: "13/07/2025", dematTransfer: "13/07/2025", listingDate: "16/07/2025" },
+      timeline: [
+        { label: "Bidding Starts", date: "09/07/2025" },
+        { label: "Bidding Ends", date: "11/07/2025" },
+        { label: "Allotment Finalisation", date: "12/07/2025" },
+        { label: "Refund Initiation", date: "13/07/2025" },
+        { label: "Demat Transfer", date: "13/07/2025" },
+        { label: "Listing Date", date: "16/07/2025" }
+      ],
       aboutCompany: "Specialized manufacturer of fluid control equipment for oil and gas sector.",
       financials: [
         { year: "2024", revenue: "₹110 Cr", totalAssets: "₹65 Cr", profit: "₹12 Cr" },
@@ -235,7 +256,13 @@ export const IPO_DATA = {
 };
 
 
-
+export const isFutureDate = (date) => {
+  if(date == '-') return true;
+  const [day, month, year] = date.split("/").map(Number);
+  const ipoDate = new Date(year, month - 1, day); 
+  const currentDate = new Date();
+  return ipoDate > currentDate;
+}
 
 
 
