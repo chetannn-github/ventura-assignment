@@ -18,7 +18,7 @@ function IPOCompanyList({listingType}) {
 
     return (
         
-        <div className='relative flex flex-col w-full py-5 '>
+        <div className='relative flex flex-col w-full py-5 h-fit'>
             <div className='flex bg-[#f8f8f8]' >
                 {["Company","Issue size","Price range","Min. Amount"].map((val, idx)=>
                     <div key= {val} className='hidden relative w-1/4 md:flex justify-center text-xs md:text-sm lg:text-sm xl:text-lg' >

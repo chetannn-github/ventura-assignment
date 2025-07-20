@@ -4,9 +4,9 @@ import IPOCompanyList from './IPOCompanyList';
 function UpcomingIPO() {
     let [selectedIPOType,setSelectedIPOType] = useState('Upcoming');
     return (
-        <div className='relative min-h-[50vh] flex flex-col gap-10 '>
+        <div className='relative h-fit flex flex-col gap-10'>
             
-            <h1 className='text-4xl font-black text-center lg:text-5xl xl:text-4xl'>Upcoming & recent <span className='text-primary'>IPOs</span></h1>
+            <h1 className='text-3xl font-black text-center lg:text-5xl xl:text-4xl'>Upcoming & recent <span className='text-primary'>IPOs</span></h1>
             
             <div className='w-full h-full p-4 rounded-3xl bottom-1 border-[#00000020] border-1'>
                 
