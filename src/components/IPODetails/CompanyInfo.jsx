@@ -3,7 +3,7 @@ import GoBack from '../GoBack'
 import { ChevronLeft } from 'lucide-react'
 import { useLocation } from 'react-router';
 import Timeline from './Timeline';
-import { DOWNLOAD_BTN, downloadPDF } from '../../utils/constant';
+import { DOWNLOAD_BTN } from '../../utils/constant';
 
 function CompanyInfo({companyInfo}) {
     let {companyLogo,date, issueSize, priceBand,name,lotValue,lotSize, listedAt, gain, listedOn, financials, timeline} = companyInfo;
@@ -50,49 +50,49 @@ function CompanyInfo({companyInfo}) {
                     <div className='flex flex-wrap justify-between h-full '>
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Issue Size</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{issueSize}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{issueSize}</h4>
 
                         </div>
 
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Price Range</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{priceBand}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{priceBand}</h4>
 
                         </div>
 
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Minimum Amount</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{lotValue}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{lotValue}</h4>
 
                         </div>
                         
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Lot size</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{lotSize}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{lotSize}</h4>
 
                         </div>
 
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Issue Dates</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{date}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{date}</h4>
 
                         </div>
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Listed On</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{listedOn}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{listedOn}</h4>
 
                         </div>
                        
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Listed Price</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{listedAt}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{listedAt}</h4>
 
                         </div>
 
 
                         <div className='w-1/3 text-xs md:w-1/4 md:text-sm'>
                             <h4 className='text-[#6B6874] text-[10px] md:text-[12px]'>Listed Gains</h4>
-                            <h4 className='font-medium text-xs md:text-sm lg:text-xl'>{gain}</h4>
+                            <h4 className='font-medium text-xs md:text-sm lg:text-sm'>{gain}</h4>
 
                         </div>
                     </div>

@@ -10,12 +10,12 @@ function NavBar() {
       <div className='flex  gap-8 items-center cursor-pointer'>
         <Link to={'/'}><img src={LOGO_URL} className=' w-[120px] xl:w-[150px] object-contains'/></Link>
         
-        <div className='hover:text-primary text-[14px] xl:text-lg 2xl:text-xl hidden lg:flex'>Invest</div> 
-        <div className='hover:text-primary text-[14px] xl:text-lg 2xl:text-xl hidden lg:flex'>Trade</div>
-        <div className='hover:text-primary text-[14px] xl:text-lg 2xl:text-xl hidden lg:flex'>Spotlight</div>
-        <div className='hover:text-primary text-[14px] xl:text-lg 2xl:text-xl hidden lg:flex'>Ease API</div>
-        <div className='hover:text-primary text-[14px] xl:text-lg 2xl:text-xl hidden lg:flex'>Pricing</div>
-        <div className='hover:text-primary text-[14px] xl:text-lg 2xl:text-xl hidden lg:flex'>Learn</div>
+        <div className='hover:text-primary text-[14px] xl:text-sm 2xl:text-lg hidden lg:flex'>Invest</div> 
+        <div className='hover:text-primary text-[14px] xl:text-sm 2xl:text-lg hidden lg:flex'>Trade</div>
+        <div className='hover:text-primary text-[14px] xl:text-sm 2xl:text-lg hidden lg:flex'>Spotlight</div>
+        <div className='hover:text-primary text-[14px] xl:text-sm 2xl:text-lg hidden lg:flex'>Ease API</div>
+        <div className='hover:text-primary text-[14px] xl:text-sm 2xl:text-lg hidden lg:flex'>Pricing</div>
+        <div className='hover:text-primary text-[14px] xl:text-sm 2xl:text-lg hidden lg:flex'>Learn</div>
       </div>
 
       <div className='flex gap-5' >

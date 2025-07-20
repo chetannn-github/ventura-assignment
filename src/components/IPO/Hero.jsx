@@ -17,12 +17,12 @@ function Hero() {
 
         <div className='relative flex flex-col justify-around h-1/2 md:h-full md:w-2/3 gap-4'>
             <div className='flex flex-col gap-5'>
-                <h1 className='text-5xl 2xl:text-8xl xl:text-6xl font-black '>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
-                <h1 className='text-xl  2xl:text-3xl xl:text-2xl'>Identify the right IPOs to invest in with our research notes</h1>
+                <h1 className='text-5xl 2xl:text-5xl xl:text-5xl font-black leading-15'>IPO - <span className='text-primary'>Intial Public <br /> Offerings</span></h1>
+                <h1 className='text-xl  xl:text-2xl'>Identify the right IPOs to invest in with our research notes</h1>
             </div>
 
             <div className='relative w-full flex flex-col gap-1 '>
-                <h3 className='text-md font-black 2xl:text-2xl xl:text-xl'>Open an account</h3>
+                <h3 className='text-md font-black 2xl:text-xl xl:text-xl'>Open an account</h3>
 
                 <div className='flex bg-[#f8f8f8] h-19 items-center gap-4 p-2 rounded-xl justify-between w-fit  md:w-md '>
                     <div className='flex gap-4 w-full'>

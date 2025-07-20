@@ -6,7 +6,7 @@ function UpcomingIPO() {
     return (
         <div className='relative min-h-[50vh] flex flex-col gap-10 '>
             
-            <h1 className='text-4xl font-black text-center lg:text-5xl xl:text-6xl'>Upcoming & recent <span className='text-primary'>IPOs</span></h1>
+            <h1 className='text-4xl font-black text-center lg:text-5xl xl:text-4xl'>Upcoming & recent <span className='text-primary'>IPOs</span></h1>
             
             <div className='w-full h-full p-4 rounded-3xl bottom-1 border-[#00000020] border-1'>
                 
@@ -16,7 +16,7 @@ function UpcomingIPO() {
                         onClick={() => setSelectedIPOType(tab)}
                         key={tab}
                         className={`h-[90%] border-2 border-transparent ${selectedIPOType == tab ? "border-b-primary font-black" : ""} flex items-center  justify-center w-1/3 
-                        hover:border-b-primary hover:border-b-2 hover:font-black text-sm lg:text-xl xl:text-2xl`}>
+                        hover:border-b-primary hover:border-b-2 hover:font-black text-sm lg:text-xl xl:text-xl`}>
                         {tab}
                         </div>
                     ))}
