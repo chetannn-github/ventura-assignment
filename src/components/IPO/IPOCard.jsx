@@ -8,7 +8,7 @@ function IPOCard({companyData}) {
 
     return (
     <Link to={`/ipo/${urlCompanyName}`}>
-        <div className=' w-[full] md:w-[350px] h-[300px] xl:w-[480px] xl:h-[350px]  flex flex-col justify-between  border-1 border-[#00000020] rounded-xl overflow-hidden pb-3 shadow-2xl'>
+        <div className=' w-[full] md:w-[350px] h-[300px] xl:w-[480px] xl:h-[350px]  flex flex-col justify-between  border-1 border-[#00000020] rounded-xl overflow-hidden  shadow-2xl'>
         
 
             <div className='p-4 flex flex-col gap-3'>
