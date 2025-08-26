@@ -14,3 +14,8 @@ This is my assignment for an internship at **Ventura Securities**.
     <img src="https://github.com/chetannn-github/ventura-assignment/blob/main/public/preview/ipodetails.png" width="100%" />
     <img src="https://github.com/chetannn-github/ventura-assignment/blob/main/public/preview/ipodetails2.png" width="100%" />
 </p>
+
+
+
+
+this is a sample backchodi changes
